@@ -1,7 +1,7 @@
 import 'dart:math';
 
 class VirtualDB {
-  List<Map<String, dynamic>> _items = [];
+  final List<Map<String, dynamic>> _items = [];
 
   // Singleton
   static final VirtualDB _db = VirtualDB._privateConstructor();

@@ -154,7 +154,7 @@ class _BookTable extends StatelessWidget {
   List<DataRow> _createBookTableRows(List<Book> books) {
     return books
         .map((book) => DataRow(cells: [
-              DataCell(Text('#' + book.id.toString())),
+              DataCell(Text('# ${book.id.toString()}')),
               DataCell(Text('${book.title} (${book.year.toString()})')),
               DataCell(IconButton(
                 icon: const Icon(Icons.delete),
